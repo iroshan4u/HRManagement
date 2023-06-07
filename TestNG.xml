@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="OrangeHRM">
+  <test name="LoginHRM_Chrome">
+	<parameter name="browserName" value="Chrome"></parameter>
+    <classes>
+      <class name="testLayer.LoginTest"/>
+    </classes>
+  </test> 
+  <test name="LoginHRM_Firefox">
+	<parameter name="browserName" value="Firefox"></parameter>
+    <classes>
+      <class name="testLayer.LoginTest"/>
+    </classes>
+  </test> 
+  <test name="LoginHRM_Edge">
+	<parameter name="browserName" value="Edge"></parameter>
+    <classes>
+      <class name="testLayer.LoginTest"/>
+    </classes>
+  </test> 
+</suite> 
