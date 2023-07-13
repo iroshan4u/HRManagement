@@ -1,5 +1,8 @@
 package testLayer;
 
+import java.io.IOException;
+
+import org.json.simple.parser.ParseException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -10,6 +13,7 @@ import org.testng.annotations.Test;
 import basePackege.BaseHRMClass;
 import pomPackage.PomLogin;
 import testData.ExcelSheet;
+import testData.ReadJson;
 
 public class LoginTest extends BaseHRMClass {
 
@@ -35,8 +39,20 @@ public class LoginTest extends BaseHRMClass {
 	}
 	
 	@DataProvider
-	public Object[][] Details(){
-		Object result[][] = ExcelSheet.readdata("Sheet1");
+	public Object[][] Details() throws IOException, ParseException{
+		String dataSource = prop.getProperty("dataSource");
+		Object[][] result = null;
+		
+		//if config key=1 user data extract from 'Details.xlsx' Excel file 
+		//if config key=2 user data extract from 'Details.json' json file
+		if(dataSource.equals("1"))
+		{
+			result = ExcelSheet.readdata("Sheet1");
+		}
+		else if (dataSource.equals("2")){
+			result = ReadJson.readdata();
+		}		
+		
 		return result;
 	}
 	

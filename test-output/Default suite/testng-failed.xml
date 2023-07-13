@@ -8,6 +8,7 @@
           <include name="clos"/>
           <include name="initSetup"/>
           <include name="Login"/>
+          <include name="validateTitle"/>
         </methods>
       </class> <!-- testLayer.LoginTest -->
     </classes>

@@ -1,0 +1,33 @@
+{
+	"users" : [
+		{
+			"username" : "a",
+			"password" : "aa",
+			"address" : [
+				{
+				"street" : "sta",
+				"city" : "citya"		
+				},
+				{
+				"street" : "sta2",
+				"city" : "citya2"
+				}
+			]
+		},
+		{
+			"username" : "Admin",
+			"password" : "admin123",
+			"address" : [
+				{
+				"street" : "stb",
+				"city" : "cityb"		
+				},
+				{
+				"street" : "stb2",
+				"city" : "cityb2"
+				}
+			]
+		}		
+	]
+		
+}

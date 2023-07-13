@@ -48,16 +48,16 @@ public class BaseHRMClass {
 		
 		if(browserName.equalsIgnoreCase("Firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "C:\\Selenium webdriver\\geckodriver\\geckodriver.exe");			
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Iroshan\\eclipse-workspace\\Framework_HR_Management\\src\\test\\java\\utility\\geckodriver.exe");			
 			driver = new FirefoxDriver();
 		}
 		else if(browserName.equalsIgnoreCase("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Selenium webdriver\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Iroshan\\eclipse-workspace\\Framework_HR_Management\\src\\test\\java\\utility\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if(browserName.equalsIgnoreCase("Edge")) {
-			System.setProperty("webdriver.Edge.driver", "C:\\Selenium webdriver\\edgedriver_win64\\msedgedriver.exe");
+			System.setProperty("webdriver.Edge.driver", "C:\\Users\\Iroshan\\eclipse-workspace\\Framework_HR_Management\\src\\test\\java\\utility\\msedgedriver.exe");
 			driver = new EdgeDriver();
 		}
 		else {
