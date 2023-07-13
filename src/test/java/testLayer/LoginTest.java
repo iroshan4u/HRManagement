@@ -63,10 +63,12 @@ public class LoginTest extends BaseHRMClass {
 		log.typepassword(password);
 		Thread.sleep(2000);
 		log.clickLoginbtn();
+		Thread.sleep(2000);
 	}
 	
 	@AfterMethod
-	public void clos() {
+	public void clos() throws InterruptedException {
 		driver.close();
+		Thread.sleep(2000);
 	}
 }

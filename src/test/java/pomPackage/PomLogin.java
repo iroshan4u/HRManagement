@@ -1,8 +1,12 @@
 package pomPackage;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import basePackege.BaseHRMClass;
 
@@ -14,6 +18,7 @@ public class PomLogin extends BaseHRMClass {
 	@FindBy(xpath = "//input[@name='password']") WebElement Password; 
 	
 	@FindBy(xpath = "//button[text()=' Login ']") WebElement Loginbtn; 
+	
 	
 	//initiate page elements
 	public PomLogin() {
@@ -30,7 +35,10 @@ public class PomLogin extends BaseHRMClass {
 	}
 	
 	public void clickLoginbtn() {
-		Loginbtn.click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(Loginbtn));
+
+		element.click();
 	}
 	
 	public String verifyTitle() {

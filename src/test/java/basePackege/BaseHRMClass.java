@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -65,7 +66,7 @@ public class BaseHRMClass {
 		}
 		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(TimeUtility.timepage, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		driver.get(prop.getProperty("url"));
 	}
 	
