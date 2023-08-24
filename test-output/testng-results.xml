@@ -1,13 +1,246 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="6" failed="1" skipped="5">
+<testng-results ignored="0" total="6" passed="2" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-13T11:59:29 CEST" name="OrangeHRM" finished-at="2023-07-13T12:00:41 CEST" duration-ms="72159">
+  <suite started-at="2023-08-10T21:46:43 CEST" name="OrangeHRM" finished-at="2023-08-10T21:47:08 CEST" duration-ms="25350">
     <groups>
     </groups>
-    <test started-at="2023-07-13T11:59:29 CEST" name="LoginHRM_Firefox" finished-at="2023-07-13T11:59:50 CEST" duration-ms="20764">
+    <test started-at="2023-08-10T21:46:43 CEST" name="LoginHRM_Chrome" finished-at="2023-08-10T21:46:45 CEST" duration-ms="1538">
       <class name="testLayer.LoginTest">
-        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@78e4deb0]" started-at="2023-07-13T11:59:29 CEST" name="initSetup" finished-at="2023-07-13T11:59:50 CEST" duration-ms="20658" status="FAIL">
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@46e8a539]" started-at="2023-08-10T21:46:43 CEST" name="initSetup" finished-at="2023-08-10T21:46:45 CEST" duration-ms="1474" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 113
+Current browser version is 115.0.5790.171 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-3LKDKLS', ip: '188.120.171.114'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 113
+Current browser version is 115.0.5790.171 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-3LKDKLS', ip: '188.120.171.114'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at basePackage.BaseHRMClass.intiation(BaseHRMClass.java:62)
+at testLayer.LoginTest.initSetup(LoginTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="validateTitle()[pri:1, instance:testLayer.LoginTest@46e8a539]" started-at="2023-08-10T21:46:45 CEST" name="validateTitle" finished-at="2023-08-10T21:46:45 CEST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 113
+Current browser version is 115.0.5790.171 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-3LKDKLS', ip: '188.120.171.114'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 113
+Current browser version is 115.0.5790.171 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-3LKDKLS', ip: '188.120.171.114'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at basePackage.BaseHRMClass.intiation(BaseHRMClass.java:62)
+at testLayer.LoginTest.initSetup(LoginTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@46e8a539]" started-at="2023-08-10T21:46:45 CEST" name="clos" finished-at="2023-08-10T21:46:45 CEST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clos -->
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@46e8a539]" started-at="2023-08-10T21:46:45 CEST" name="initSetup" finished-at="2023-08-10T21:46:45 CEST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:testLayer.LoginTest@46e8a539]" started-at="2023-08-10T21:46:45 CEST" name="Login" data-provider="Details" finished-at="2023-08-10T21:46:45 CEST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 113
+Current browser version is 115.0.5790.171 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-3LKDKLS', ip: '188.120.171.114'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 113
+Current browser version is 115.0.5790.171 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-3LKDKLS', ip: '188.120.171.114'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at basePackage.BaseHRMClass.intiation(BaseHRMClass.java:62)
+at testLayer.LoginTest.initSetup(LoginTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@46e8a539]" started-at="2023-08-10T21:46:45 CEST" name="clos" finished-at="2023-08-10T21:46:45 CEST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clos -->
+      </class> <!-- testLayer.LoginTest -->
+    </test> <!-- LoginHRM_Chrome -->
+    <test started-at="2023-08-10T21:46:43 CEST" name="LoginHRM_Firefox" finished-at="2023-08-10T21:47:04 CEST" duration-ms="20528">
+      <class name="testLayer.LoginTest">
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@c7a975a]" started-at="2023-08-10T21:46:43 CEST" name="initSetup" finished-at="2023-08-10T21:47:04 CEST" duration-ms="20459" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -32,8 +265,8 @@ at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at basePackege.BaseHRMClass.intiation(BaseHRMClass.java:53)
-at testLayer.LoginTest.initSetup(LoginTest.java:29)
+at basePackage.BaseHRMClass.intiation(BaseHRMClass.java:57)
+at testLayer.LoginTest.initSetup(LoginTest.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,7 +307,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initSetup -->
-        <test-method signature="validateTitle()[pri:1, instance:testLayer.LoginTest@78e4deb0]" started-at="2023-07-13T11:59:50 CEST" name="validateTitle" finished-at="2023-07-13T11:59:50 CEST" duration-ms="0" status="SKIP">
+        <test-method signature="validateTitle()[pri:1, instance:testLayer.LoginTest@c7a975a]" started-at="2023-08-10T21:47:04 CEST" name="validateTitle" finished-at="2023-08-10T21:47:04 CEST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
@@ -92,8 +325,8 @@ at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at basePackege.BaseHRMClass.intiation(BaseHRMClass.java:53)
-at testLayer.LoginTest.initSetup(LoginTest.java:29)
+at basePackage.BaseHRMClass.intiation(BaseHRMClass.java:57)
+at testLayer.LoginTest.initSetup(LoginTest.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -134,11 +367,15 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitle -->
-        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@78e4deb0]" started-at="2023-07-13T11:59:50 CEST" name="clos" finished-at="2023-07-13T11:59:50 CEST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@c7a975a]" started-at="2023-08-10T21:47:04 CEST" name="clos" finished-at="2023-08-10T21:47:04 CEST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clos -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:testLayer.LoginTest@78e4deb0]" started-at="2023-07-13T11:59:50 CEST" name="Login" data-provider="Details" finished-at="2023-07-13T11:59:50 CEST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@c7a975a]" started-at="2023-08-10T21:47:04 CEST" name="initSetup" finished-at="2023-08-10T21:47:04 CEST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:testLayer.LoginTest@c7a975a]" started-at="2023-08-10T21:47:04 CEST" name="Login" data-provider="Details" finished-at="2023-08-10T21:47:04 CEST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -168,8 +405,8 @@ at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at basePackege.BaseHRMClass.intiation(BaseHRMClass.java:53)
-at testLayer.LoginTest.initSetup(LoginTest.java:29)
+at basePackage.BaseHRMClass.intiation(BaseHRMClass.java:57)
+at testLayer.LoginTest.initSetup(LoginTest.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,209 +447,45 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@78e4deb0]" started-at="2023-07-13T11:59:50 CEST" name="initSetup" finished-at="2023-07-13T11:59:50 CEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initSetup -->
-        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@78e4deb0]" started-at="2023-07-13T11:59:50 CEST" name="clos" finished-at="2023-07-13T11:59:50 CEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clos -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:testLayer.LoginTest@78e4deb0]" started-at="2023-07-13T11:59:50 CEST" name="Login" data-provider="Details" finished-at="2023-07-13T11:59:50 CEST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[fef]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[dac]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DESKTOP-3LKDKLS', ip: '188.120.171.114']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DESKTOP-3LKDKLS', ip: '188.120.171.114'
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:146)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at basePackege.BaseHRMClass.intiation(BaseHRMClass.java:53)
-at testLayer.LoginTest.initSetup(LoginTest.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:114)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@78e4deb0]" started-at="2023-07-13T11:59:50 CEST" name="initSetup" finished-at="2023-07-13T11:59:50 CEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initSetup -->
-        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@78e4deb0]" started-at="2023-07-13T11:59:50 CEST" name="clos" finished-at="2023-07-13T11:59:50 CEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clos -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:testLayer.LoginTest@78e4deb0]" started-at="2023-07-13T11:59:50 CEST" name="Login" data-provider="Details" finished-at="2023-07-13T11:59:50 CEST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[casc]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sce]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DESKTOP-3LKDKLS', ip: '188.120.171.114']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DESKTOP-3LKDKLS', ip: '188.120.171.114'
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:146)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at basePackege.BaseHRMClass.intiation(BaseHRMClass.java:53)
-at testLayer.LoginTest.initSetup(LoginTest.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:114)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@78e4deb0]" started-at="2023-07-13T11:59:50 CEST" name="initSetup" finished-at="2023-07-13T11:59:50 CEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initSetup -->
-        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@78e4deb0]" started-at="2023-07-13T11:59:50 CEST" name="clos" finished-at="2023-07-13T11:59:50 CEST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@c7a975a]" started-at="2023-08-10T21:47:04 CEST" name="clos" finished-at="2023-08-10T21:47:04 CEST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clos -->
       </class> <!-- testLayer.LoginTest -->
     </test> <!-- LoginHRM_Firefox -->
-    <test started-at="2023-07-13T11:59:29 CEST" name="LoginHRM_Chrome" finished-at="2023-07-13T11:59:56 CEST" duration-ms="27103">
+    <test started-at="2023-08-10T21:46:45 CEST" name="LoginHRM_Edge" finished-at="2023-08-10T21:47:08 CEST" duration-ms="23775">
       <class name="testLayer.LoginTest">
-        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@76494737]" started-at="2023-07-13T11:59:29 CEST" name="initSetup" finished-at="2023-07-13T11:59:34 CEST" duration-ms="5188" status="PASS">
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@28a0fd6c]" started-at="2023-08-10T21:46:45 CEST" name="initSetup" finished-at="2023-08-10T21:46:51 CEST" duration-ms="6066" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initSetup -->
-        <test-method signature="validateTitle()[pri:1, instance:testLayer.LoginTest@76494737]" started-at="2023-07-13T11:59:34 CEST" name="validateTitle" finished-at="2023-07-13T11:59:35 CEST" duration-ms="14" status="PASS">
+        <test-method signature="validateTitle()[pri:1, instance:testLayer.LoginTest@28a0fd6c]" started-at="2023-08-10T21:46:51 CEST" name="validateTitle" finished-at="2023-08-10T21:46:51 CEST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitle -->
-        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@76494737]" started-at="2023-07-13T11:59:35 CEST" name="clos" finished-at="2023-07-13T11:59:37 CEST" duration-ms="2093" status="PASS">
+        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@28a0fd6c]" started-at="2023-08-10T21:46:51 CEST" name="clos" finished-at="2023-08-10T21:46:53 CEST" duration-ms="2171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clos -->
-        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@76494737]" started-at="2023-07-13T11:59:37 CEST" name="initSetup" finished-at="2023-07-13T11:59:41 CEST" duration-ms="3853" status="PASS">
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@28a0fd6c]" started-at="2023-08-10T21:46:53 CEST" name="initSetup" finished-at="2023-08-10T21:46:59 CEST" duration-ms="5944" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initSetup -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:testLayer.LoginTest@76494737]" started-at="2023-07-13T11:59:41 CEST" name="Login" data-provider="Details" finished-at="2023-07-13T11:59:48 CEST" duration-ms="7155" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:testLayer.LoginTest@28a0fd6c]" started-at="2023-08-10T21:46:59 CEST" name="Login" data-provider="Details" finished-at="2023-08-10T21:47:06 CEST" duration-ms="7460" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -428,377 +501,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@76494737]" started-at="2023-07-13T11:59:48 CEST" name="clos" finished-at="2023-07-13T11:59:50 CEST" duration-ms="2080" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clos -->
-        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@76494737]" started-at="2023-07-13T11:59:50 CEST" name="initSetup" finished-at="2023-07-13T11:59:54 CEST" duration-ms="4096" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initSetup -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:testLayer.LoginTest@76494737]" started-at="2023-07-13T11:59:54 CEST" name="Login" data-provider="Details" finished-at="2023-07-13T11:59:56 CEST" duration-ms="2007" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[fef]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[dac]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [958979a50222c778448f3f1eb23e80be, findElement {using=xpath, value=//input[@name="username"]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.79, ms:edgeOptions: {debuggerAddress: localhost:52461}, msedge: {msedgedriverVersion: 114.0.1823.67 (3f1d7fbb324e..., userDataDir: C:\Users\Iroshan\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 114.0.1823.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 958979a50222c778448f3f1eb23e80be]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [958979a50222c778448f3f1eb23e80be, findElement {using=xpath, value=//input[@name="username"]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.79, ms:edgeOptions: {debuggerAddress: localhost:52461}, msedge: {msedgedriverVersion: 114.0.1823.67 (3f1d7fbb324e..., userDataDir: C:\Users\Iroshan\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 114.0.1823.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 958979a50222c778448f3f1eb23e80be
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-at pomPackage.PomLogin.typeusername(PomLogin.java:30)
-at testLayer.LoginTest.Login(LoginTest.java:62)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@76494737]" started-at="2023-07-13T11:59:56 CEST" name="clos" finished-at="2023-07-13T11:59:56 CEST" duration-ms="2" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [958979a50222c778448f3f1eb23e80be, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.79, ms:edgeOptions: {debuggerAddress: localhost:52461}, msedge: {msedgedriverVersion: 114.0.1823.67 (3f1d7fbb324e..., userDataDir: C:\Users\Iroshan\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 114.0.1823.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 958979a50222c778448f3f1eb23e80be]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [958979a50222c778448f3f1eb23e80be, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.79, ms:edgeOptions: {debuggerAddress: localhost:52461}, msedge: {msedgedriverVersion: 114.0.1823.67 (3f1d7fbb324e..., userDataDir: C:\Users\Iroshan\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 114.0.1823.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 958979a50222c778448f3f1eb23e80be
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:419)
-at testLayer.LoginTest.clos(LoginTest.java:71)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clos -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:testLayer.LoginTest@76494737]" started-at="2023-07-13T11:59:56 CEST" name="Login" data-provider="Details" finished-at="2023-07-13T11:59:56 CEST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[casc]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sce]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [958979a50222c778448f3f1eb23e80be, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.79, ms:edgeOptions: {debuggerAddress: localhost:52461}, msedge: {msedgedriverVersion: 114.0.1823.67 (3f1d7fbb324e..., userDataDir: C:\Users\Iroshan\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 114.0.1823.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 958979a50222c778448f3f1eb23e80be]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [958979a50222c778448f3f1eb23e80be, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.79, ms:edgeOptions: {debuggerAddress: localhost:52461}, msedge: {msedgedriverVersion: 114.0.1823.67 (3f1d7fbb324e..., userDataDir: C:\Users\Iroshan\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 114.0.1823.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 958979a50222c778448f3f1eb23e80be
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:419)
-at testLayer.LoginTest.clos(LoginTest.java:71)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@76494737]" started-at="2023-07-13T11:59:56 CEST" name="initSetup" finished-at="2023-07-13T11:59:56 CEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initSetup -->
-        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@76494737]" started-at="2023-07-13T11:59:56 CEST" name="clos" finished-at="2023-07-13T11:59:56 CEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clos -->
-      </class> <!-- testLayer.LoginTest -->
-    </test> <!-- LoginHRM_Chrome -->
-    <test started-at="2023-07-13T11:59:50 CEST" name="LoginHRM_Edge" finished-at="2023-07-13T12:00:41 CEST" duration-ms="51364">
-      <class name="testLayer.LoginTest">
-        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@17fc391b]" started-at="2023-07-13T11:59:50 CEST" name="initSetup" finished-at="2023-07-13T11:59:56 CEST" duration-ms="5909" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initSetup -->
-        <test-method signature="validateTitle()[pri:1, instance:testLayer.LoginTest@17fc391b]" started-at="2023-07-13T11:59:56 CEST" name="validateTitle" finished-at="2023-07-13T11:59:56 CEST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTitle -->
-        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@17fc391b]" started-at="2023-07-13T11:59:56 CEST" name="clos" finished-at="2023-07-13T11:59:58 CEST" duration-ms="2198" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clos -->
-        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@17fc391b]" started-at="2023-07-13T11:59:58 CEST" name="initSetup" finished-at="2023-07-13T12:00:04 CEST" duration-ms="5744" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initSetup -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:testLayer.LoginTest@17fc391b]" started-at="2023-07-13T12:00:04 CEST" name="Login" data-provider="Details" finished-at="2023-07-13T12:00:10 CEST" duration-ms="6294" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@17fc391b]" started-at="2023-07-13T12:00:10 CEST" name="clos" finished-at="2023-07-13T12:00:12 CEST" duration-ms="2202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clos -->
-        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@17fc391b]" started-at="2023-07-13T12:00:12 CEST" name="initSetup" finished-at="2023-07-13T12:00:18 CEST" duration-ms="5852" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initSetup -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:testLayer.LoginTest@17fc391b]" started-at="2023-07-13T12:00:18 CEST" name="Login" data-provider="Details" finished-at="2023-07-13T12:00:25 CEST" duration-ms="6286" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[fef]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[dac]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@17fc391b]" started-at="2023-07-13T12:00:25 CEST" name="clos" finished-at="2023-07-13T12:00:27 CEST" duration-ms="2202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clos -->
-        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testLayer.LoginTest@17fc391b]" started-at="2023-07-13T12:00:27 CEST" name="initSetup" finished-at="2023-07-13T12:00:33 CEST" duration-ms="5732" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initSetup -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:testLayer.LoginTest@17fc391b]" started-at="2023-07-13T12:00:33 CEST" name="Login" data-provider="Details" finished-at="2023-07-13T12:00:39 CEST" duration-ms="6780" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[casc]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@17fc391b]" started-at="2023-07-13T12:00:39 CEST" name="clos" finished-at="2023-07-13T12:00:41 CEST" duration-ms="2128" status="PASS">
+        <test-method is-config="true" signature="clos()[pri:0, instance:testLayer.LoginTest@28a0fd6c]" started-at="2023-08-10T21:47:06 CEST" name="clos" finished-at="2023-08-10T21:47:08 CEST" duration-ms="2116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clos -->

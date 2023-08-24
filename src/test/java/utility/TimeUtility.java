@@ -1,6 +1,8 @@
 package utility;
 
+import java.time.Duration;
+
 public class TimeUtility {
 
-	public static int timepage = 20;
+	public Duration pageloadtime = Duration.ofSeconds(10);
 }

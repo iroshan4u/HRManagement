@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [OrangeHRM]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="LoginHRM_Chrome(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="testLayer.LoginTest">
+        <methods>
+          <include name="clos"/>
+          <include name="initSetup"/>
+          <include name="Login"/>
+          <include name="validateTitle"/>
+        </methods>
+      </class> <!-- testLayer.LoginTest -->
+    </classes>
+  </test> <!-- LoginHRM_Chrome(failed) -->
   <test thread-count="2" parallel="tests" name="LoginHRM_Firefox(failed)">
     <parameter name="browserName" value="Firefox"/>
     <classes>
@@ -14,16 +27,4 @@
       </class> <!-- testLayer.LoginTest -->
     </classes>
   </test> <!-- LoginHRM_Firefox(failed) -->
-  <test thread-count="2" parallel="tests" name="LoginHRM_Chrome(failed)">
-    <parameter name="browserName" value="Chrome"/>
-    <classes>
-      <class name="testLayer.LoginTest">
-        <methods>
-          <include name="clos"/>
-          <include name="initSetup"/>
-          <include name="Login" invocation-numbers="1"/>
-        </methods>
-      </class> <!-- testLayer.LoginTest -->
-    </classes>
-  </test> <!-- LoginHRM_Chrome(failed) -->
 </suite> <!-- Failed suite [OrangeHRM] -->
